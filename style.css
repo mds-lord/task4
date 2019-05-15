@@ -1,0 +1,37 @@
+div.board{
+    border: solid lightgrey 2px;
+    display: grid;
+    width: 28em;
+    height: 28em;
+    grid-template-columns: 1fr repeat(8, 1fr) 1fr;
+    grid-template-rows: 1fr repeat(8, 1fr) 1fr;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+}
+.cell {
+    border: solid black 1px;
+    width: 3em;
+    height: 3em;
+}
+
+.cell:nth-child(12),.cell:nth-child(14),.cell:nth-child(16),.cell:nth-child(18),
+.cell:nth-child(23),.cell:nth-child(25),.cell:nth-child(27),.cell:nth-child(29),
+.cell:nth-child(32),.cell:nth-child(34),.cell:nth-child(36),.cell:nth-child(38),
+.cell:nth-child(43),.cell:nth-child(45),.cell:nth-child(47),.cell:nth-child(49),
+.cell:nth-child(52),.cell:nth-child(54),.cell:nth-child(56),.cell:nth-child(58),
+.cell:nth-child(63),.cell:nth-child(65),.cell:nth-child(67),.cell:nth-child(69),
+.cell:nth-child(72),.cell:nth-child(74),.cell:nth-child(76),.cell:nth-child(78),
+.cell:nth-child(83),.cell:nth-child(85),.cell:nth-child(87),.cell:nth-child(89){
+    background-color:black;
+}
+
+/* .cell:nth-child(2n+1) {
+    background-color: black;
+}
+.cell:nth-child(2n+0) {
+    background-color: white;
+} */
